@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: azure;
+}
+
+h1{
+    color:black;
+    font-size: 50px;
+}
+p{
+    font-size: 25px;
+}
+
+li{
+    font-size: 25px;
+}
+button{
+    width: 100px;
+    height:100px;
+    padding: 20px;
+    margin: 10px;
+    align-items: center;
+    border-radius:50%;
+    display: flex;
+    position: relative;
+    
+}
+
+button a:hover{
+    background-color:lightblue;
+}
+
+/* Left Navigation */
+.left-container {
+    width: 150px;
+    /* background: #f4f4f4; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.nav-item {
+    width: 100px;
+    height: 100px;
+    background: lightgray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Main Content */
+.main-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px;
+    height: max-content;
+}
+
+.right-container {
+    flex: 1;
+    padding: 20px;
+    margin:2%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    /* border: 2px solid black; */
+}
+
+.box {
+    background: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Different box sizes */
+.box1 { width: 150px; height: 300px; }
+.box2 { width: 300px; height: 200px; }
+.box3 { width: 200px; height: 100px; }
+.box4 { width: 250px; height: 150px; }
+
+/* Bottom Horizontal Scroll Gallery */
+/* .bottom-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+
+    background: white;
+    scroll-behavior: smooth;
+    border: 2px solid black;
+}
+
+.bottom-container img {
+    width: 100px;
+    height: 100px; 
+    margin: 5px;
+    background: lightgray;
+    transition: transform 0.5s ease-in-out;
+}
+
+.active {
+    transform: scale(1.5);
+    transition: background-color 2.5s;
+} */
+
+
+
+.bottom-gallery {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    background: white;
+    border-top: 2px solid black;
+    scroll-behavior: smooth;
+    position: relative;
+    height: 120px;
+}
+
+.bottom-gallery::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+.bottom-gallery img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Enlarged active image */
+.active {
+    transform: scale(1.5);
+}
+
+
+/* Layout Adjustments */
+.layout {
+    display: flex;
+    flex: 1;
+}

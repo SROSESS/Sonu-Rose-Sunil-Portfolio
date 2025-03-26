@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sonu Rose Sunil</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="demo2.css">
+    </head>
+    <body>
+        <div class="layout">
+            <!-- Left Navigation -->
+            <div class="left-container">
+                <div class="nav-item">Homemade Web</div>
+                <div class="nav-item">Projects</div>
+                <div class="nav-item">Instagram</div>
+                <div class="nav-item">LinkedIn</div>
+            </div>
+    
+            <!-- Main Content -->
+            <div class="right-container">
+                <div class="box box1"></div>
+                <div class="box box2"></div>
+                <div class="box box3"></div>
+                <div class="box box4"></div>
+            </div>
+        </div>
+    
+        <!-- Bottom Horizontal Scroll Gallery -->
+        <div class="bottom-container">
+            <img src="https://via.placeholder.com/100" alt="Image">
+            <img src="https://via.placeholder.com/100" alt="Image">
+            <img src="https://via.placeholder.com/100" alt="Image">
+            <img src="https://via.placeholder.com/100" alt="Image">
+            <img src="https://via.placeholder.com/100" alt="Image">
+            <img src="https://via.placeholder.com/100" alt="Image">
+            <img src="https://via.placeholder.com/100" alt="Image">
+            <img src="https://via.placeholder.com/100" alt="Image">
+            <img src="https://via.placeholder.com/100" alt="Image">
+            <img src="https://via.placeholder.com/100" alt="Image">
+        </div>
+    
+
+        <!-- <div class="right-container">
+           <div class="text">
+               <h1><i>Sonu Rose Sunil</i></h1>
+               <p>Sonu Rose Sunil is an Indian-American designer based in Richmond, Virginia. Currently, she is pursuing her undergraduate degree in Graphic Design and a certificate in Product Innovation from the Da Vinci Center. She also earned her associate degree in Graphic Design from John Tyler Community College. Sonu is passionate about creating designs with purpose and seeks to inspire others through her work.</p>
+   
+                 <ul>
+                   Current Job:
+                   <li>Graphic Design Intern at Virginia Commonwealth University - College of Engineering</li>
+                   <li> Adobe Ambassador for Virginia Commonwealth University</li>
+                 </ul>
+           </div>
+        </div>
+    <div class="images" style="transform: translateX(-399.855vw);width:755.824vw ;">
+        <div class="image"><a href="gg"></a></div>
+        <div class="image"><a href="gg"></a></div>
+        <div class="image"><a href="gg"></a></div>
+
+    </div> -->
+    <script>
+   let index = 0;
+        const images = document.querySelectorAll(".bottom-gallery img");
+        const gallery = document.getElementById("imageGallery");
+
+        function animateGallery() {
+            images.forEach(img => img.classList.remove("active")); // Reset sizes
+            images[index].classList.add("active"); // Enlarge active image
+
+            gallery.scrollLeft += 110; // Scroll right
+
+            index = (index + 1) % images.length; // Loop through images
+        }
+
+        setInterval(animateGallery, 1500);
+    </script>
+
+    </script>
+    </body>
+</html>
